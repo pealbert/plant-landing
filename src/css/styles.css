@@ -57,29 +57,29 @@ h1 {
 
 .nav-link {
 	@apply text-lg font-bold duration-300;
-}
 
-.nav-link:hover {
-	@apply text-yellow-500;
+	&:hover {
+		@apply text-yellow-500;
+	}
 }
 
 /* button */
 .btn {
 	@apply border border-yellow-500 bg-yellow-500 rounded-md px-5 py-2 duration-300;
-}
 
-.btn span {
-	@apply font-bold;
-}
+	&:hover {
+		@apply opacity-90;
+	}
 
-.btn:hover {
-	@apply opacity-90;
+	span {
+		@apply font-bold;
+	}
 }
 
 .btn_outline {
 	@apply bg-transparent;
-}
 
-.btn_outline:hover {
-	@apply bg-yellow-500;
+	&:hover {
+		@apply bg-yellow-500;
+	}
 }
