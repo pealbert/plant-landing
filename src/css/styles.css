@@ -101,3 +101,11 @@ h3 {
 .popular__card:hover img {
 	@apply -top-8;
 }
+
+.swiper-pagination {
+	@apply relative mt-8
+}
+
+.swiper-pagination-bullet {
+	@apply bg-green-500 size-3;
+}
