@@ -18,8 +18,6 @@
 	--animate-scalingUp: scaleUp 3s linear infinite;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 /* Keyframes */
 @keyframes move {
 	50% { transform: translateY(-1rem); }
