@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -20,17 +20,28 @@
 
 /* Keyframes */
 @keyframes move {
-	50% { transform: translateY(-1rem); }
+	50% {
+		transform: translateY(-1rem);
+	}
 }
 
 @keyframes rotate {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes scaleUp {
-	0%, 100% { transform: scale(0.8); }
-	50% { transform: scale(1.2); }
+	0%,
+	100% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.2);
+	}
 }
 
 /* Container */
@@ -109,10 +120,12 @@ h3 {
 	@apply -top-8;
 }
 
-.swiper-pagination {
-	@apply relative mt-8;
-}
+.swiper {
+	.swiper-pagination {
+		@apply relative mt-8;
 
-.swiper-pagination-bullet {
-	@apply bg-green-500 size-3;
+		.swiper-pagination-bullet {
+			@apply bg-green-500 size-3;
+		}
+	}
 }
