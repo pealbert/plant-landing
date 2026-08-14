@@ -43,6 +43,10 @@
 	}
 }
 
+html {
+	@apply overflow-x-hidden scroll-smooth;
+}
+
 body {
 	@apply bg-green-950 text-white font-jost tracking-wider;
 }
@@ -69,6 +73,11 @@ h3 {
 	&:hover {
 		@apply text-yellow-500;
 	}
+}
+
+/* active */
+.active {
+	@apply text-yellow-500;
 }
 
 .title {
@@ -101,7 +110,7 @@ h3 {
 }
 
 .swiper-pagination {
-	@apply relative mt-8
+	@apply relative mt-8;
 }
 
 .swiper-pagination-bullet {
