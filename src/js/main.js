@@ -24,9 +24,9 @@ navLink.forEach((link) => {
 });
 
 /*~~~~~~~~~~~~~~~ SHOW SCROLL UP ~~~~~~~~~~~~~~~*/
-const scrollUp = () => {
-	const scrollUpBtn = document.getElementById("scroll-up");
+const scrollUpBtn = document.getElementById("scroll-up");
 
+const showScrollUp = () => {
 	if (window.scrollY >= 250) {
 		scrollUpBtn.classList.remove("-bottom-1/2");
 		scrollUpBtn.classList.add("bottom-4");
@@ -36,7 +36,17 @@ const scrollUp = () => {
 	}
 };
 
-window.addEventListener("scroll", scrollUp);
+const scrollUp = () => {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+};
+
+window.addEventListener("scroll", showScrollUp);
+
+scrollUpBtn.addEventListener("click", scrollUp);
+
 
 /*~~~~~~~~~~~~~~~ CHANGE BACKGROUND HEADER ~~~~~~~~~~~~~~~*/
 const scrollHeader = () => {
