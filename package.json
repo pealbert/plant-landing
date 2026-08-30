@@ -4,19 +4,15 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview",
-		"lint": "biome lint",
-		"format": "biome format",
 		"check": "biome check",
-		"lint:write": "biome lint --write",
+		"check:write": "biome check --write --unsafe",
+		"dev": "vite",
+		"format": "biome format",
 		"format:write": "biome format --write",
-		"check:write": "biome check --write"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.5.8",
-		"vite": "^8.2.0"
+		"lint": "biome lint",
+		"lint:write": "biome lint --write",
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.3.3",
@@ -24,5 +20,9 @@
 		"scrollreveal": "^4.0.9",
 		"swiper": "^14.1.0",
 		"tailwindcss": "^4.3.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.8",
+		"vite": "^8.2.0"
 	}
 }

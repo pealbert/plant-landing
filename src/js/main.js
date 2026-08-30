@@ -39,14 +39,13 @@ const showScrollUp = () => {
 const scrollUp = () => {
 	window.scrollTo({
 		top: 0,
-		behavior: "smooth"
+		behavior: "smooth",
 	});
 };
 
 window.addEventListener("scroll", showScrollUp);
 
 scrollUpBtn.addEventListener("click", scrollUp);
-
 
 /*~~~~~~~~~~~~~~~ CHANGE BACKGROUND HEADER ~~~~~~~~~~~~~~~*/
 const scrollHeader = () => {

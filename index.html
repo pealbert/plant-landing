@@ -2,47 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
 	
 	<!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
-	<link rel="shortcut icon" href="src/assets/img/favicon.ico" type="image/x-icon">
+	<link href="src/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-	<link rel="stylesheet" href="src/css/styles.css">
+	<link href="src/css/styles.css" rel="stylesheet" >
 
 	<title>Plant Website || TailwindCSS </title>
 </head>
 
 <body>
 	<!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-	<header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+	<header class="bg-green-950 fixed w-full top-0 left-0 z-50" id="navbar" >
 		<nav class="container w-full flex items-center justify-between h-16 sm:h-20">
 			<div class="font-lobster sm:text-2xl">IndorePlants.</div>
 
-			<div id="nav-menu" class="absolute top-0 -left-full min-h-screen w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+			<div class="absolute top-0 -left-full min-h-screen w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto" id="nav-menu" >
 				<ul class="flex flex-col items-center gap-8 lg:flex-row">
 					<li>
-						<a href="#home" class="nav-link active">Home</a>
+						<a class="nav-link active" href="#home" >Home</a>
 					</li>
 
 					<li>
-						<a href="#about" class="nav-link">About</a>
+						<a class="nav-link" href="#about" >About</a>
 					</li>
 
 					<li>
-						<a href="#popular" class="nav-link">Popular</a>
+						<a class="nav-link" href="#popular" >Popular</a>
 					</li>
 
 					<li>
-						<a href="#review" class="nav-link">Review</a>
+						<a class="nav-link" href="#review" >Review</a>
 					</li>
 				</ul>
 
 				<div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
-					<img src="src/assets/img/leaf-1.png" alt="Leaf image" class="w-32">
+					<img alt="Leaf image" class="w-32" src="src/assets/img/leaf-1.png" >
 				</div>
 
 				<div class="absolute -top-5 left-0 rotate-90 opacity-90 lg:hidden">
-					<img src="src/assets/img/leaf-2.png" alt="Leaf image" class="w-32">
+					<img alt="Leaf image" class="w-32" src="src/assets/img/leaf-2.png" >
 				</div>
 			</div>
 
@@ -54,7 +54,7 @@
 	
 	<main>
 		<!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
-		<section id="home" class="relative">
+		<section class="relative" id="home" >
 			<div class="container">
 				<!-- blob 1 -->
 				<div class="size-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
@@ -100,7 +100,7 @@
 
 					<!-- image -->
 					<div class="w-full relative lg:w-1/2">
-						<img src="src/assets/img/home.png" alt="Plant image" class="home__image">
+						<img alt="Plant image" class="home__image" src="src/assets/img/home.png" >
 
 						<!-- leaf -->
 						<div class="absolute -top-10 right-0 opacity-30 animate-movingY xl:top-5">
@@ -183,9 +183,9 @@
 		</div>
 
 		<!--~~~~~~~~~~~~~~~ About us ~~~~~~~~~~~~~~~-->
-		<section id="about" class="relative overflow-hidden">
+		<section class="relative overflow-hidden" id="about" >
 			<div class="about__leaf absolute -top-8 -right-12 opacity-50">
-				<img src="src/assets/img/leaf-3.png" alt="Leaf image" class="w-40 md:w-52 xl:w-64">
+				<img alt="Leaf image" class="w-40 md:w-52 xl:w-64" src="src/assets/img/leaf-3.png" >
 			</div>
 
 
@@ -199,11 +199,11 @@
 				<div class="flex flex-col items-center lg:flex-row gap-5">
 					<!-- image -->
 					 <div class="about__item__1-img w-full lg:w-1/2">
-						<img src="src/assets/img/plant-1.png" alt="Plant image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
-					 </div>
+						<img alt="Plant image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto" src="src/assets/img/plant-1.png" >
+					</div>
 
-					 <!-- content -->
-					  <div class="about__item__1-content w-full lg:w-1/2">
+					<!-- content -->
+					<div class="about__item__1-content w-full lg:w-1/2">
 						<div class="space-y-5">
 							<h3>
 								Make your <span class="text-yellow-500">organic</span> <br>garden
@@ -219,7 +219,7 @@
 				<div class="flex flex-col items-center lg:flex-row-reverse gap-5">
 					<!-- image -->
 					 <div class="about__item__2-img w-full lg:w-1/2">
-						<img src="src/assets/img/plant-2.png" alt="Plant image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+						<img alt="Plant image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto" src="src/assets/img/plant-2.png" >
 					 </div>
 
 					 <!-- content -->
@@ -238,7 +238,7 @@
 		</section>
 
 		<!--~~~~~~~~~~~~~~~ Popular ~~~~~~~~~~~~~~~-->
-		<section id="popular" class="bg-green-900">
+		<section class="bg-green-900" id="popular" >
 			<div class="popular__top flex flex-col items-center gap-3 text-center mb-40">
 				<h2 class="title">Your Choice Plant</h2>
 				<p class="max-w-2xl">Follow instruction for more</p>
@@ -247,7 +247,7 @@
 			<div class="container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 				<!-- card 1 -->
 				<div class="popular__card bg-green-950 p-10 pt-24 rounded-md relative">
-					<img src="src/assets/img/cart-1.png" alt="Add to card" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+					<img alt="Add to card" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500" src="src/assets/img/cart-1.png" >
 
 					<p class="italic">Nephrolepis exaltata</p>
 					<h3>Boston Fern</h3>
@@ -263,7 +263,7 @@
 					<div class="flex items-center justify-between">
 						<p class="text-xl">$5</p>
 
-						<button title="cart" type="button" class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+						<button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl" title="cart" type="button" >
 							<i class="ri-shopping-cart-fill"></i>
 						</button>
 					</div>
@@ -271,7 +271,7 @@
 
 				<!-- card 2 -->
 				<div class="popular__card bg-green-950 p-10 pt-24 rounded-md relative">
-					<img src="src/assets/img/cart-2.png" alt="Add to card" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+					<img alt="Add to card" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500" src="src/assets/img/cart-2.png" >
 
 					<p class="italic">Ficus elastica</p>
 					<h3>Rubber Plant</h3>
@@ -287,7 +287,7 @@
 					<div class="flex items-center justify-between">
 						<p class="text-xl">$5</p>
 
-						<button title="cart" type="button" class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+						<button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl" title="cart" type="button" >
 							<i class="ri-shopping-cart-fill"></i>
 						</button>
 					</div>
@@ -295,7 +295,7 @@
 
 				<!-- card 3 -->
 				<div class="popular__card bg-green-950 p-10 pt-24 rounded-md relative">
-					<img src="src/assets/img/cart-3.png" alt="Add to card" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+					<img alt="Add to card" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500" src="src/assets/img/cart-3.png" >
 
 					<p class="italic">Spathiphyllum wallisii</p>
 					<h3>Peace Lily</h3>
@@ -311,7 +311,7 @@
 					<div class="flex items-center justify-between">
 						<p class="text-xl">$5</p>
 
-						<button title="cart" type="button" class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+						<button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl" title="cart" type="button" >
 							<i class="ri-shopping-cart-fill"></i>
 						</button>
 					</div>
@@ -319,7 +319,7 @@
 
 				<!-- card 4 -->
 				<div class="popular__card bg-green-950 p-10 pt-24 rounded-md relative">
-					<img src="src/assets/img/cart-4.png" alt="Add to card" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+					<img alt="Add to card" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500" src="src/assets/img/cart-4.png" >
 
 					<p class="italic">Adenium obesum</p>
 					<h3>Desert Rose</h3>
@@ -335,7 +335,7 @@
 					<div class="flex items-center justify-between">
 						<p class="text-xl">$5</p>
 
-						<button title="cart" type="button" class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+						<button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl" title="cart" type="button" >
 							<i class="ri-shopping-cart-fill"></i>
 						</button>
 					</div>
@@ -344,10 +344,10 @@
 		</section>
 
 		<!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
-		<section id="review" class="relative mb-20 md:mb-28 overflow-hidden">
+		<section class="relative mb-20 md:mb-28 overflow-hidden" id="review" >
 
 			<div class="review__leaf absolute -top-8 -left-12 opacity-50">
-				<img src="src/assets/img/leaf-4.png" alt="Leaf image" class="w-40 md:w-52 xl:w-64">
+				<img alt="Leaf image" class="w-40 md:w-52 xl:w-64" src="src/assets/img/leaf-4.png" >
 			</div>
 
 			<div class="review__top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
@@ -364,7 +364,7 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
 								</p>
 								<div class="flex items-center">
-									<img src="src/assets/img/review-1.jpg" alt="Image of Designer John doe" class="size-12 rounded-full">
+									<img alt="Image of Designer John doe" class="size-12 rounded-full" src="src/assets/img/review-1.jpg" >
 									<div class="ml-2">
 										<p class="text-yellow-500 uppercase">John doe</p>
 										<p>Designer</p>
@@ -380,7 +380,7 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
 								</p>
 								<div class="flex items-center">
-									<img src="src/assets/img/review-2.jpg" alt="Image of Designer John doe" class="size-12 rounded-full">
+									<img alt="Image of Designer John doe" class="size-12 rounded-full" src="src/assets/img/review-2.jpg" >
 									<div class="ml-2">
 										<p class="text-yellow-500 uppercase">John doe</p>
 										<p>Designer</p>
@@ -396,7 +396,7 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
 								</p>
 								<div class="flex items-center">
-									<img src="src/assets/img/review-3.jpg" alt="Image of Designer John doe" class="size-12 rounded-full">
+									<img alt="Image of Designer John doe" class="size-12 rounded-full" src="src/assets/img/review-3.jpg" >
 									<div class="ml-2">
 										<p class="text-yellow-500 uppercase">John doe</p>
 										<p>Designer</p>
@@ -412,7 +412,7 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
 								</p>
 								<div class="flex items-center">
-									<img src="src/assets/img/review-4.jpg" alt="Image of Designer John doe" class="size-12 rounded-full">
+									<img alt="Image of Designer John doe" class="size-12 rounded-full" src="src/assets/img/review-4.jpg" >
 									<div class="ml-2">
 										<p class="text-yellow-500 uppercase">John doe</p>
 										<p>Designer</p>
@@ -428,7 +428,7 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
 								</p>
 								<div class="flex items-center">
-									<img src="src/assets/img/review-1.jpg" alt="Image of Designer John doe" class="size-12 rounded-full">
+									<img alt="Image of Designer John doe" class="size-12 rounded-full" src="src/assets/img/review-1.jpg" >
 									<div class="ml-2">
 										<p class="text-yellow-500 uppercase">John doe</p>
 										<p>Designer</p>
@@ -455,8 +455,8 @@
 				</h3>
 
 				<div class="flex flex-col md:flex-row gap-1">
-					<input type="email" placeholder="Your Email Address" class="w-full px-5 py-3 text-green-900 rounded-md outline-none bg-white">
-					<button type="button" title="Subscribe" class="flex items-center justify-center gap-1 bg-green-950 px-5 py-3 rounded-md hover:opacity-80 duration-300 ">
+					<input class="w-full px-5 py-3 text-green-900 rounded-md outline-none bg-white" placeholder="Your Email Address" type="email" >
+					<button class="flex items-center justify-center gap-1 bg-green-950 px-5 py-3 rounded-md hover:opacity-80 duration-300 " title="Subscribe" type="button" >
 						<span>Subscribe</span>
 						<i class="ri-send-plane-2-fill"></i>
 					</button>
@@ -533,12 +533,12 @@
 
 		<!-- floral image -->
 		<div class="footer__floral absolute bottom-0 left-0 opacity-20 pointer-events-none">
-			<img src="src/assets/img/floral-1.png" alt="Floral image" class="w-full lg:w-1/2">
+			<img alt="Floral image" class="w-full lg:w-1/2" src="src/assets/img/floral-1.png" >
 		</div>
 	</footer>
 
 	<!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
-	<button title="Go up" type="button" class="fixed right-4 -bottom-1/2 cursor-pointer bg-yellow-500 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up">
+	<button class="fixed right-4 -bottom-1/2 cursor-pointer bg-yellow-500 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up" title="Go up" type="button" >
 		<i class="ri-arrow-up-line"></i>
 	</button>
 
